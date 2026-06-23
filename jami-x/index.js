@@ -1,3 +1,21 @@
+const express = require("express");
+const cors = require("cors");
+
+const app = express();
+
+app.use(cors());
+
+app.get("/status", (req,res)=>{
+  res.json({
+    online:true,
+    uptime: process.uptime()
+  });
+});
+
+
+app.listen(3000, ()=>{
+ console.log("API running on port 3000");
+});
 const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeCacheableSignalKeyStore } = require('@whiskeysockets/baileys');
 const { Boom } = require('@hapi/boom');
 const pino = require('pino');
