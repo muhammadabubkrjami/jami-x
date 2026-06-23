@@ -1,0 +1,22 @@
+{
+  "name": "jami-x",
+  "version": "1.0.0",
+  "description": "Jami-X WhatsApp Bot by LegendJami",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.9",
+    "@hapi/boom": "^10.0.1",
+    "pino": "^8.21.0",
+    "chalk": "^4.1.2",
+    "axios": "^1.6.8",
+    "qrcode": "^1.5.3",
+    "sharp": "^0.33.3",
+    "fluent-ffmpeg": "^2.1.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
